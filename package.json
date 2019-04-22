@@ -1,0 +1,22 @@
+{
+  "name": "@gatewayjs/redis",
+  "version": "1.0.0",
+  "description": "ioredis plugin for gateway.js",
+  "scripts": {
+    "dev": "NODE_ENV=development cli gw:dev",
+    "start": "cli gw:start",
+    "restart": "cli gw:restart",
+    "stop": "cli gw:stop"
+  },
+  "author": "evio",
+  "license": "MIT",
+  "dependencies": {
+    "@gatewayjs/gateway": "^1.0.1",
+    "ioredis": "^4.9.0",
+    "redis-commands": "^1.4.0"
+  },
+  "gateway": {
+    "dependencies": {}
+  },
+  "plugins": {}
+}
