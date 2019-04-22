@@ -1,6 +1,6 @@
 {
   "name": "@gatewayjs/redis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ioredis plugin for gateway.js",
   "scripts": {
     "dev": "NODE_ENV=development cli gw:dev",
