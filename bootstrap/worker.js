@@ -11,7 +11,7 @@ class Redis {
     this.transacted = true;
   }
 
-  async _exec(cmd) {
+  _exec(cmd) {
     if (cmd && this.transacted && commands.hasFlag(cmd, 'write')) {
       if (typeof this.dbo[cmd] === 'function') {
         return (...args) => this.stacks.push({ cmd, args });
