@@ -5,6 +5,7 @@ class Redis {
   constructor(dbo) {
     this.dbo = dbo;
     this.transacted = false;
+    this.stacks = [];
   }
 
   begin() {
